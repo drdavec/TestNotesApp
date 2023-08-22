@@ -1,20 +1,22 @@
 //
-//  TestNotesAppApp.swift
+//  TestNotesApp.swift
 //  TestNotesApp
 //
 //  Created by David Carlson on 8/22/23.
 //
 
+//import TestNote
 import SwiftUI
 import SwiftData
 
 @main
-struct TestNotesAppApp: App {
+struct TestNotesApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+			Note.self
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
