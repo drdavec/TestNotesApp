@@ -5,14 +5,15 @@
 //  Created by David Carlson on 8/22/23.
 //
 
-//import TestNote
+import TestNote
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-	@Query private var notes: [Note]
+//	@Query private var notes: [Note]
+	@Query private var notes: [Note2]
 
     var body: some View {
         NavigationSplitView {
@@ -71,7 +72,9 @@ struct ContentView: View {
 	
 	private func addNote() {
 		withAnimation {
-			let newNote = Note(title: "My Title", content: "Add your note here.")
+// Compiler crashes if I use the identical Note model class imported from a Package.
+//			let newNote = Note(title: "My Title", content: "Add your note here.")
+			let newNote = Note2(title: "My Title", content: "Add your note here.")
 			modelContext.insert(newNote)
 		}
 	}
@@ -95,5 +98,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-		.modelContainer(for: [Item.self, Note.self], inMemory: true)
+//		.modelContainer(for: [Item.self, Note.self], inMemory: true)
+		.modelContainer(for: [Item.self, Note2.self], inMemory: true)
 }

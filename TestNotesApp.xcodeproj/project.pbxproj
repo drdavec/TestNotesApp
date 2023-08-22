@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42C9EDF2A95752100A22118 /* TestNote in Frameworks */ = {isa = PBXBuildFile; productRef = B42C9EDE2A95752100A22118 /* TestNote */; };
 		B483A2EC2A95578500A754D7 /* TestNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A2EB2A95578500A754D7 /* TestNotesApp.swift */; };
 		B483A2EE2A95578500A754D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A2ED2A95578500A754D7 /* ContentView.swift */; };
 		B483A2F02A95578500A754D7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A2EF2A95578500A754D7 /* Item.swift */; };
@@ -16,7 +17,7 @@
 		B483A3092A95578600A754D7 /* TestNotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A3082A95578600A754D7 /* TestNotesAppUITests.swift */; };
 		B483A30B2A95578600A754D7 /* TestNotesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A30A2A95578600A754D7 /* TestNotesAppUITestsLaunchTests.swift */; };
 		B483A3192A9557C900A754D7 /* TestNote in Frameworks */ = {isa = PBXBuildFile; productRef = B483A3182A9557C900A754D7 /* TestNote */; };
-		B483A31B2A955F7500A754D7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A31A2A955F7500A754D7 /* Note.swift */; };
+		B483A31B2A955F7500A754D7 /* Note2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A31A2A955F7500A754D7 /* Note2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 		B483A3042A95578600A754D7 /* TestNotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestNotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B483A3082A95578600A754D7 /* TestNotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNotesAppUITests.swift; sourceTree = "<group>"; };
 		B483A30A2A95578600A754D7 /* TestNotesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNotesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B483A31A2A955F7500A754D7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B483A31A2A955F7500A754D7 /* Note2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42C9EDF2A95752100A22118 /* TestNote in Frameworks */,
 				B483A3192A9557C900A754D7 /* TestNote in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +105,7 @@
 				B483A2EB2A95578500A754D7 /* TestNotesApp.swift */,
 				B483A2ED2A95578500A754D7 /* ContentView.swift */,
 				B483A2EF2A95578500A754D7 /* Item.swift */,
-				B483A31A2A955F7500A754D7 /* Note.swift */,
+				B483A31A2A955F7500A754D7 /* Note2.swift */,
 				B483A2F12A95578600A754D7 /* Assets.xcassets */,
 				B483A2F32A95578600A754D7 /* Preview Content */,
 			);
@@ -153,6 +155,7 @@
 			name = TestNotesApp;
 			packageProductDependencies = (
 				B483A3182A9557C900A754D7 /* TestNote */,
+				B42C9EDE2A95752100A22118 /* TestNote */,
 			);
 			productName = TestNotesApp;
 			productReference = B483A2E82A95578500A754D7 /* TestNotesApp.app */;
@@ -227,7 +230,7 @@
 			);
 			mainGroup = B483A2DF2A95578500A754D7;
 			packageReferences = (
-				B483A3172A9557C900A754D7 /* XCLocalSwiftPackageReference "../TestNote" */,
+				B42C9EDD2A95752100A22118 /* XCLocalSwiftPackageReference "../TestNote" */,
 			);
 			productRefGroup = B483A2E92A95578500A754D7 /* Products */;
 			projectDirPath = "";
@@ -274,7 +277,7 @@
 				B483A2EE2A95578500A754D7 /* ContentView.swift in Sources */,
 				B483A2F02A95578500A754D7 /* Item.swift in Sources */,
 				B483A2EC2A95578500A754D7 /* TestNotesApp.swift in Sources */,
-				B483A31B2A955F7500A754D7 /* Note.swift in Sources */,
+				B483A31B2A955F7500A754D7 /* Note2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,13 +609,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		B483A3172A9557C900A754D7 /* XCLocalSwiftPackageReference "../TestNote" */ = {
+		B42C9EDD2A95752100A22118 /* XCLocalSwiftPackageReference "../TestNote" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../TestNote;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B42C9EDE2A95752100A22118 /* TestNote */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestNote;
+		};
 		B483A3182A9557C900A754D7 /* TestNote */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TestNote;

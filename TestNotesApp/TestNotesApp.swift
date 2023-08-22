@@ -5,7 +5,7 @@
 //  Created by David Carlson on 8/22/23.
 //
 
-//import TestNote
+import TestNote
 import SwiftUI
 import SwiftData
 
@@ -14,7 +14,8 @@ struct TestNotesApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
-			Note.self
+//			Note.self,
+			Note2.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 

@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-public final class Note {
+public final class Note2 {
 	public var id: UUID
 	
 	public var createdDate: Date
